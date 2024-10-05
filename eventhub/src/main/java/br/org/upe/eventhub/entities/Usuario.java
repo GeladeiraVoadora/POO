@@ -20,6 +20,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
+    private String cpf;
     private String email;
     private String senha;
     private String telefone;
