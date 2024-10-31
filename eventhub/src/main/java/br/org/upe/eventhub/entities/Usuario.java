@@ -29,4 +29,12 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario")
     private List<Inscricao> inscricoes;
 
+    public Usuario(String nome, String cpf, String email, String senha, String telefone) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+        this.telefone = telefone;
+    }
+
 }
